@@ -1094,7 +1094,7 @@ function DrawEnemy {
 
 #Função para ouvir o teclado
 function ListenKey {
-stty -icanon min 0
+stty -echo -icanon -icrln min 0
 	# ouve as teclas pressionadas pelo teclado
 	_key=$(dd bs=3 count=1 2>/dev/null)
 
